@@ -17,7 +17,7 @@ document.getElementById('ageForm').addEventListener('submit', function(event) {
           if (age >= 18) {
             resolve(`Welcome, ${nameInput.value}. You can vote.`);
           } else {
-            reject(`Oh sorry, ${nameInput.value}. You aren't old enough.`);
+            reject(`Oh sorry ${nameInput.value}. You aren't old enough.`);
           }
         }, 4000); // Resolving after 4 seconds
       });
